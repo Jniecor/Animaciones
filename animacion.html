@@ -6,26 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animacion</title>
     <style> 
-        P{
-          width: 100px;
-          height: 100px;
-          font-weight: bold;
-          position: relative;
-          animation: example 4s linear alternate 4 1s;
-
+        div{
+          transition: linear, font-size 2s, transform 4s;
+          width: fit-content;
         }
-        
-        @keyframes example {
-            from {left: 0px;}
-            to {left: 91% ; color: blue; font-size: 30px;}
+
+        div:hover{
+            color: red;
+            font-size: 2em;
+            transform: rotate(180deg);
         }
 </style>
 </head>
     <body>
-    
-    
-    <div><p>DAY Z ENJOYER</p></div>
-    
-   
+    <div><a>DAY Z ENJOYER</a></div>
 </body>
 </html>
